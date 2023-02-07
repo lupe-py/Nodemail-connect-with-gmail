@@ -50,26 +50,6 @@ app.post('/ad',(req,res)=>{
     })
 
 
-app.set('view engine','ejs');
-
-app.get('/',(req,res)=>{
-    res.render('home');
-})
-app.get('/about',(req,res)=>{
-    res.render('about');
-})
-app.get('/whoweare',(req,res)=>{
-    res.render('whoweare');
-})
-app.get('/careers',(req,res)=>{
-    res.render('careers');
-})
-app.get('/contact',(req,res)=>{
-    res.render('contact');
-})
-
-app.use(express.static(__dirname + '/public'));
-app.use(express.static(__dirname + '/photo'));
 
 app.listen(3000,()=>{
     console.log("port is 3000");
